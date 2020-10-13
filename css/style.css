@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+
+.content01 {
+    text-align: center;
+    border: solid;
+    margin: 150px 1%;
+    width: 90%;
+    padding: 50px 50px 50px;
+    color: aliceblue;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.container-1 div,
+.container-2 div,
+.container-3 div,
+.container-4 div {
+    padding: 10px;
+    opacity: 0.9;
+    background-color: yellow;
+    margin: 10px;
+    border: 5px solid black;
+}
+
+.container-1,
+.container-2,
+.container-3,
+.container-4 {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.box-1 {
+    background-color: yellow;
+    flex-basis: 30%;
+}
+
+.box-2 {
+    background-color: #8b1d33;
+    flex-basis: 30%;
+}
+
+.box {
+    background-color: black;
+    flex-basis: 30%
+}
+
+.box-6 {
+    flex-basis: 30%;
+    background-color: black;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.content {
+    background-color: yellow;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.content-02 {
+    background-color: yellow;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.content-01 {
+    background-color: yellow;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.logo {
+    background-color: yellow;
+    float: right;
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    border-radius: 10%;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 25px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.slider {
+    width: 1100px;
+    height: 600px;
+    overflow: hidden;
+    border: 10px solid black;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(50%);
+    display: flex;
+}
+
+.bar {
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: teal;
+    opacity: .5;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+
+.bar:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 25%;
+    transition: all .6s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked~.s1 {
+    margin-left: -20px;
+}
+
+#r2:checked~.s1 {
+    margin-left: -25%;
+}
+
+#r3:checked~.s1 {
+    margin-left: -50%;
+}
+
+#r4:checked~.s1 {
+    margin-left: 75%;
+}
+
+.header {
+    height: 100PX;
+    background-color: yellow;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+.aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+
+/* For mobile phones: */
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
